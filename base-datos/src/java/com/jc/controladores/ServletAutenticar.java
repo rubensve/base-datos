@@ -33,11 +33,11 @@ public class ServletAutenticar extends HttpServlet {
           String pas=request.getParameter("password");
           out.println("Bienvenido "+name);
           if(pas.equals("hola")){
-          RequestDispatcher despachar= request.getRequestDispatcher("/maldito-gobierno-corrupto.html");
+          RequestDispatcher despachar= request.getRequestDispatcher("base-datos/#pagina2");
           despachar.forward(request, response);
           }else{
               request.setAttribute("valor", "los datos estan mal");
-              RequestDispatcher despachar= request.getRequestDispatcher("/autenticar.jsp");
+              RequestDispatcher despachar= request.getRequestDispatcher("base-datos/index.html");
           despachar.forward(request, response);
           }
       
