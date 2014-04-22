@@ -17,10 +17,10 @@ public class TestProcedimiento {
     public static void main(String args[])throws Exception{
         Conexion c=new Conexion();
         Connection con=c.conectarse();
-        CallableStatement callate=con.prepareCall("{call autenticar(?,?,?)}");
+        CallableStatement callate=con.prepareCall("{call autenticar_usuario_1(?,?,?)}");
         callate.registerOutParameter(1,java.sql.Types.INTEGER);
-        callate.setString(2,"juan");
-        callate.setString(3,"camps");
+        callate.setString(2,"rubens");
+        callate.setString(3,"veloz");
       
         callate.execute();
         int pk=callate.getInt(1);
