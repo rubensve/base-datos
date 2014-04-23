@@ -46,7 +46,7 @@
     </div>
     </div>
     <div align="center">
-        <form action="autenticar"  method="post">
+        <form action="ServletAutenticar1"  method="post">
 	<div data-role="fieldcontain">
 	  <label for="textinput">Usuario: &nbsp &nbsp &nbsp </label>
 	  <input type="text" name="usuario" id="usuario" value=""  />
@@ -64,15 +64,13 @@
             
         </form>
         <div >
-               ${valor}
+            <h1>    ${valor} </h1>
         </div>
    </div>
 	<div data-role="footer" data-position="fixed">
 		<h4>Velozoft </h4>
 	</div>
 </div>
-
-
 
 <div data-role="page" id="pagina2" >
 	<div data-role="header">
@@ -422,18 +420,9 @@
   </div>
 </div>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
+        
+        
+        
+        
 </body>
 </html>

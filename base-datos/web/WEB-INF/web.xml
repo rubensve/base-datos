@@ -5,16 +5,16 @@
         <servlet-class>com.jc.controladores.ServletHola</servlet-class>
     </servlet>
     <servlet>
-        <servlet-name>ServletAutenticar</servlet-name>
-        <servlet-class>com.jc.controladores.ServletAutenticar</servlet-class>
+        <servlet-name>autenticar1</servlet-name>
+        <servlet-class>com.jc.controladores.ServletAutenticar1</servlet-class>
     </servlet>
     <servlet-mapping>
         <servlet-name>Algo</servlet-name>
         <url-pattern>/primero.xls</url-pattern>
     </servlet-mapping>
     <servlet-mapping>
-        <servlet-name>ServletAutenticar</servlet-name>
-        <url-pattern>/autenticar</url-pattern>
+        <servlet-name>autenticar1</servlet-name>
+        <url-pattern>/ServletAutenticar1</url-pattern>
     </servlet-mapping>
     <session-config>
         <session-timeout>

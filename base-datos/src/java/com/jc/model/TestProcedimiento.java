@@ -17,14 +17,25 @@ public class TestProcedimiento {
     public static void main(String args[])throws Exception{
         Conexion c=new Conexion();
         Connection con=c.conectarse();
-        CallableStatement callate=con.prepareCall("{call autenticar_usuario_1(?,?,?)}");
+        /*CallableStatement callate1=con.prepareCall("{call insertar(?,?,?)}");
+        callate1.registerOutParameter(1, java.sql.Types.INTEGER);
+        callate1.setString(2, "rubens11");
+        callate1.setString(3, "veloz");
+        callate1.execute();
+        System.out.println("Insertado con exito");
+        */
+        
+        
+        
+        CallableStatement callate=con.prepareCall("{call autenticar_usuarios(?,?,?)}");
         callate.registerOutParameter(1,java.sql.Types.INTEGER);
-        callate.setString(2,"rubens");
+        callate.setString(2,"rubens11");
         callate.setString(3,"veloz");
-      
         callate.execute();
         int pk=callate.getInt(1);
         System.out.println("El id insertado es:"+pk);
+        
+     
     }
     
 }
