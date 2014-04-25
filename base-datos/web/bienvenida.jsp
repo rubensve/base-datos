@@ -26,7 +26,7 @@
       
         <li><a href="#admon">
         <img src="admin.jpg" width="120" height="90">
-        <h2>Administraci贸n</h2>
+        <h2>Administraci髇</h2>
         <p>Alta de Peliculas, Salas, <br> Empleados 
         </p></a> 
         </li>
@@ -41,7 +41,7 @@
 
 <div data-role="page" id="admon">
   <div data-role="header">
-    <h1>Panel de Administraci贸n</h1>
+    <h1>Panel de Administraci髇</h1>
   <a href="#pagina2" data-icon="home" data-iconpos="right">
   Home </a>
   </div>
@@ -56,7 +56,7 @@
     <input type="text" name="textinput" id="textinput" value=""  />
   </div>
   <div data-role="fieldcontain">
-    <label for="passwordinput">Contrase帽a:</label><br>
+    <label for="passwordinput">Contrase馻:</label><br>
     <input type="password" name="passwordinput" id="passwordinput" value=""  />
   </div>
   <a href="#opcion" data-role="button" data-theme="b">
@@ -72,7 +72,7 @@
 
 <div data-role="page" id="opcion">
   <div data-role="header">
-    <h1>Panel de Administraci贸n</h1>
+    <h1>Panel de Administraci髇</h1>
     <a href="#admon" data-icon="back">Salir </a>
   </div>
   <div data-role="content">
@@ -111,7 +111,7 @@
     </div>
     
     <div data-role="fieldcontain">
- <label for="textinput2" >Duraci贸n:</label><br>
+ <label for="textinput2" >Duraci髇:</label><br>
       <input type="text" name="textinput2" id="textinput2" value=""  />
     </div>
     <div data-role="fieldcontain">
@@ -136,39 +136,47 @@
   </div>
 </div>
 
+
+
 <div data-role="page" id="altaempleado">
   <div data-role="header">
     <h1>Alta Empleados</h1>
     <a href="#opcion" data-icon="back">Volver </a>
   </div>
   <div data-role="content">
-    <div align="center">
-    <div data-role="fieldcontain">
+    
+   <form action="empleaditos"  method="post">
+        <div data-role="fieldcontain">
  <label for="textinput2" >Nombre:</label> <br>
-      <input type="text" name="textinput2" id="textinput2" value=""  />
+      <input type="text" name="nombre" id="nombre" value=""  />
     </div>
     
     <div data-role="fieldcontain">
  <label for="textinput2" >Apellido Paterno:</label> <br>
-      <input type="text" name="textinput2" id="textinput2" value=""  />
+      <input type="text" name="apellidop" id="apellidop" value=""  />
     </div>
     
     <div data-role="fieldcontain">
  <label for="textinput2" >Apellido Materno:</label><br>
-      <input type="text" name="textinput2" id="textinput2" value=""  />
+      <input type="text" name="apellidom" id="apellidom" value=""  />
     </div>
     
     <div data-role="fieldcontain">
       <label for="selectmenu" class="select">Rol:</label>
       <br>
-      <select name="selectmenu" id="selectmenu">
+      <select name="roles" id="roles">
         <option value="admin">Administrador</option>
         <option value="vendedor">Vendedor</option>
       </select>
     </div>
-<a data-role="button" data-theme="b">Registrar </a>
+<div>
+    <input type="button" value="registrar" id="registrar" >
+        </div>
+                </form>
+
+  
   </div>
-  </div>
+    
   <div data-role="footer" data-position="fixed">
     <h4>Velozoft</h4>
   </div>

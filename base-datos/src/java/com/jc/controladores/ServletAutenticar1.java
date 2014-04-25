@@ -43,13 +43,12 @@ public class ServletAutenticar1 extends HttpServlet {
         callate.setString(3,pas);
         callate.execute();
         pk=callate.getInt(1);
-        System.out.println(name + pas);
         } catch (Exception ex) {
          Logger.getLogger(ServletAutenticar1.class.getName()).log(Level.SEVERE, null, ex);
         }
        
          if(pk==1){
-          RequestDispatcher despachar= request.getRequestDispatcher("bienvenida.html");
+          RequestDispatcher despachar= request.getRequestDispatcher("bienvenida.jsp");
           despachar.forward(request, response);
                
           }else{
